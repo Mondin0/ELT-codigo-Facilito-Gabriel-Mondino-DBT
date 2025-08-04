@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: smartphones_clean
+  - name: silver_smartphones_clean
     description: "Tabla limpia con smartphones filtrando filas sin marca ni modelo, y tipos normalizados."
     columns:
       - name: BRAND_NAME
