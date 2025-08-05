@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: gold_dim_smartphones
+    description: "Dimensión con atributos consolidados de smartphones y clave surrogate."
+    columns:
+      - name: smartphone_key
+        description: "Clave surrogate única del smartphone generada con hash de marca y modelo."
+        tests:
+          - unique
+          - not_null
+      - name: BRAND_NAME
+        description: "Nombre de la marca del smartphone."
+      - name: MODEL
+        description: "Modelo del smartphone."
+      - name: HAS_5G
+        description: "Indica si el smartphone tiene soporte 5G."
+      - name: HAS_NFC
+        description: "Indica si el smartphone tiene NFC."
+      - name: HAS_IR_BLASTER
+        description: "Indica si el smartphone tiene un blaster IR."
+      - name: OS
+        description: "Sistema operativo del smartphone."
+      - name: PROCESSOR_BRAND
+        description: "Marca del procesador."
+      - name: NUM_CORES
+        description: "Número de cores del procesador."
+      - name: PROCESSOR_SPEED
+        description: "Velocidad del procesador en GHz."
+      - name: BATTERY_CAPACITY
+        description: "Capacidad de la batería (mAh)."
+      - name: RAM_CAPACITY
+        description: "Capacidad de RAM."
+      - name: SCREEN_SIZE
+        description: "Tamaño de pantalla en pulgadas."
+      - name: RESOLUTION_WIDTH
+        description: "Resolución horizontal de la pantalla."
+      - name: RESOLUTION_HEIGHT
+        description: "Resolución vertical de la pantalla."
+
+  - name: gold_fact_smartphones
+    description: "Tabla de hechos con medidas de smartphones y clave foránea a dimensión."
+    columns:
+      - name: smartphone_key
+        description: "Clave surrogate que referencia la dimensión dim_smartphones."
+        tests:
+          - not_null
+      - name: PRICE
+        description: "Precio del smartphone."
+      - name: RATING
+        description: "Calificación o rating del smartphone."
