@@ -1,0 +1,1 @@
+select * from {{ source('bronze_smartphones_source', 'SMARTPHONES') }}

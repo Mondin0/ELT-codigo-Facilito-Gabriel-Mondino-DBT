@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: silver_smartphones_clean
+    description: "Tabla limpia con smartphones filtrando filas sin marca ni modelo, y tipos normalizados."
+    columns:
+      - name: BRAND_NAME
+        description: "Nombre de la marca del smartphone."
+      - name: MODEL
+        description: "Modelo del smartphone."
+      - name: PRICE
+        description: "Precio del smartphone en la moneda local."
+      - name: HAS_5G
+        description: "Indica si el smartphone tiene soporte 5G."
+      - name: RATING
+        description: "Calificación promedio del smartphone."

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze_smartphones_source
+    database: DE_GABRIELMONDINO_CODIGOFACILITO
+    schema: PUBLIC
+    tables:
+      - name: SMARTPHONES
