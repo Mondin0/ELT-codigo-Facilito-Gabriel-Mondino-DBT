@@ -3,6 +3,8 @@ venv/
 
 .env
 
-/airflow/logs/
+logs/
 
 __pycache__/
+
+dbt*
