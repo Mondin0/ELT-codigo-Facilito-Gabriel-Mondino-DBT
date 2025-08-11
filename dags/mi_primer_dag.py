@@ -13,5 +13,5 @@ with DAG(
 
    tarea_inicial = BashOperator(
        task_id="tarea_inicial",
-       bash_command="echo 'Esta es mi primera tarea en Airflow' && cd /opt/airflow/dbt_project/dbt && dbt debug"
+       bash_command="echo 'Esta es mi primera tarea en Airflow' && cd /opt/airflow/dbt_project/dbt && dbt debug && dbt run"
    )

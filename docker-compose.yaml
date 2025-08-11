@@ -79,6 +79,7 @@ x-airflow-common:
    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
    - ./src:/opt/airflow/dbt_project
    - /home/userAcount/.dbt/dbt_cloud.yml:/home/airflow/.dbt/dbt_cloud.yml
+   - /home/userAcount/.dbt/cloud-cli:/home/airflow/.dbt/cloud-cli
    - ./dbt:/usr/local/bin/dbt
  user: "${AIRFLOW_UID:-50000}:0"
  depends_on:
