@@ -1,0 +1,10 @@
+# Ignorar a nivel de proyecto general
+venv/
+
+.env
+
+logs/
+
+__pycache__/
+
+dbt*
