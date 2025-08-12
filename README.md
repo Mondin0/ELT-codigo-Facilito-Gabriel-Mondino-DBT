@@ -27,14 +27,3 @@ Este proyecto desarrollado por **Gabriel Mondino** enmarcado en el curso **INGEN
 - DAG en Airflow definido en Python para ejecutar el pipeline dbt diariamente.
 
 Esta solución demuestra cómo combinar herramientas modernas: **dbt para transformación modular y testable**, **Snowflake para almacenamiento escalable en la nube**, y **Airflow para la orquestación automatizada**, siguiendo un patrón arquitectónico robusto y escalable de capas medallion.
-
-[1] https://docs.getdbt.com/docs/build/projects
-[2] https://www.syntonize.com/desbloqueando-el-poder-de-los-datos-con-dbt-y-snowflake/
-[3] https://pipeline2insights.substack.com/p/dbt-in-action-1-fundamentals
-[4] https://docs.newrelic.com/es/docs/infrastructure/other-infrastructure-integrations/dbt-cloud-integration/
-[5] https://dev.to/pizofreude/study-notes-421-422-dbt-project-setup-2d4d
-[6] https://www.reddit.com/r/dataengineering/comments/1k83uee/how_to_use_airflow_and_dbt_together_in_a/?tl=es-419
-[7] https://docs.getdbt.com/best-practices/how-we-structure/1-guide-overview
-[8] https://github.com/DivineSamOfficial/Snowflake-ELT-Pipeline-with-dbt-and-Airflow/blob/main/README.md
-[9] https://stellans.io/dbt-project-structure-conventions/
-[10] https://www.youtube.com/watch?v=nxsnzB3mwjA
